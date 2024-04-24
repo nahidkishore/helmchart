@@ -1,0 +1,16 @@
+
+#Deploy multiple Helmcharts using Helmfile
+#Create a Helmfile for deploying multiple helmchart .i.e. helloworld1, helloworld2
+# helm create helloworld1
+# helm create helloworld2
+
+---
+releases:
+
+  - name: helloworld1
+    chart: ./helloworld1
+    installed: true
+
+  - name: helloworld2
+    chart: ./helloworld2
+    installed: true

@@ -1,0 +1,11 @@
+
+# Install helm chart from remote github repo using Helmfile
+---
+repositories:
+  - name: helloworld
+    url: git+https://github.com/nahidkishore/helmchart@helloworld?ref=main&sparse=0
+releases:
+
+  - name: helloworld
+    chart: helloworld/helloworld
+    installed: true
